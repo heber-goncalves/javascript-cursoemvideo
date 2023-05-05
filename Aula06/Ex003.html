@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex003</title>
+    <style>
+        body{
+            /* Comentário em CSS*/
+            background-color: hsl(270, 100%, 33%);
+            color: rgb(255, 255, 255);
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(164, 121, 252);
+        }
+    </style>
+</head>
+<body>
+    <!-- Comentário em HTML -->
+    <h1>Título</h1>
+    <p>Texto do corpo</p>
+    <script>
+
+        var n1 = Number.parseFloat(window.prompt('Digite um número'))
+        //Convert the String returned by the prompt in a Float number 
+        var n2 = Number(window.prompt('Digite outro número'))
+        //Detect automatically if the read number is Int or Float and convert it
+        var soma = n1 + n2
+        window.alert('A soma dos números é ' + soma + '!') //Concatenation
+        window.alert(`A soma dos números ${n1} e ${n2} é ${soma}!`) //Template String (Place Holders)
+        
+        soma.toString()  //Convert to String
+        String(soma)    //Convert to String
+
+    </script>
+</body>
+</html>

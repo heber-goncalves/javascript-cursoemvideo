@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heber | Sistemas para Internet</title>
+    <style>
+        body{
+            border-top: 12px solid rgb(105, 105, 237);
+            border-left: 12px solid rgb(105, 105, 237);
+            background-color: rgb(246, 238, 238);
+        }
+        h1{
+            text-indent: 10px;
+            color: rgb(27, 9, 126);
+            font: normal 28pt Monospace;
+        }
+        h5{
+            text-indent: 10px;
+            color: black;
+            font: normal 12pt Monospace;
+            line-height: 5%;
+        }
+        p{
+            margin-left: 10px;
+            color: rgb(10, 0, 64);
+            font: normal 12pt Courier_new;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        window.alert('Informe os dados a seguir para criarmos uma página para a sua empresa!')
+        var nome = window.prompt('Digite o nome da sua empresa: ')
+        var slogan = window.prompt('Qual o slogan da sua empresa?')
+        var anos = Number(window.prompt('Quantos anos de atuação tem a sua empresa?'))
+        var quantidadeFuncionarios = Number(window.prompt('Quantos colaboradores a sua empresa possui?'))
+        var receita = Number.parseFloat(window.prompt('Qual foi a receita do ano de 2022?'))
+        var crescimento = Number.parseFloat(window.prompt('Qual foi o percentual de crescimento de 2021 para 2022?'))
+
+
+        document.write(`<h1><strong>${nome}</strong></h1>`)
+        document.write(`<h5>${slogan}</h5></br>`)
+        document.write(`<p>Com ${anos} anos de atuação, a ${nome[0].toUpperCase()}${nome.substring(1).toLowerCase()} conta com ${quantidadeFuncionarios} colaboradores 
+        e fechou o ano de 2022 com uma receita de ${receita.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})},
+         o que representou um crescimento de ${crescimento.toFixed(1).replace('.', ',')}% em relação ao ano anterior.<p>`)
+    </script>
+</body>
+</html>
